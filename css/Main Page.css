@@ -1,30 +1,50 @@
-.header {
-    padding: 20px 15px;
-    background: darkcyan;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 
 }
 
-.vertical-menu {
+.sidebar {
+    position: fixed;
+    left: 0;
     width: 250px;
-  }
-  
-  .vertical-menu a {
-    background-color: darkslateblue;
-    color: white;
-    display: block;
-    padding: 50px;
-    text-decoration: none;
-  }
-  
-  .vertical-menu a:hover {
-    background-color: #ccc;
-  }
-  
-  .vertical-menu a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+}
 
-  .class-center {
-      width:"250px"
-  }
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+
+}
+
+.sidebar ul a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 65px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a li {
+    margin-right: 16px;
+}
+
